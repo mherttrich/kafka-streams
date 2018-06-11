@@ -1,0 +1,38 @@
+{
+  "namespace": "de.micha.events",
+  "type": "record",
+  "name": "Tweet",
+  "doc": "Represents an tweet",
+  "fields": [
+    {
+      "name": "id",
+      "type": ["null", "int"],
+      "doc": "this tweet id"
+    },
+	{
+	  "name": "message",
+	  "type": ["null", "string"],
+	  "doc": "the message"
+	},
+	{
+	  "name": "ip",
+	  "type": ["string", "null"],
+	  "doc": "ip address, where it comes from"
+	},
+    {
+      "name": "user",
+      "type": ["null", "string"],
+      "doc": "login name of the user"
+    },
+    {
+      "name": "receivedTime",
+      "type": ["null", "long"],
+      "doc": "timestamp in ms"
+    },
+    {
+      "name": "size",
+      "type": ["null", "long"],
+      "doc": "size of message"
+    }
+  ]
+}
